@@ -1,0 +1,57 @@
+<mat-toolbar class="!h-20 !border-b !border-slate-200 !bg-white">
+
+  <div class="flex w-full items-center justify-between px-4">
+
+    <!-- Informações -->
+    <div>
+      <h2 class="text-lg font-semibold text-slate-900">
+        Bem-vindo ao TaskFlow
+      </h2>
+
+      <p class="text-sm text-slate-500">
+        Organize seu trabalho de forma inteligente
+      </p>
+    </div>
+
+    <!-- Ações -->
+    <div class="flex items-center gap-3">
+
+      <button
+        mat-icon-button
+        aria-label="Notificações"
+      >
+        <mat-icon>notifications_none</mat-icon>
+      </button>
+
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="userMenu"
+        aria-label="Abrir menu do usuário"
+      >
+        <mat-icon>account_circle</mat-icon>
+      </button>
+
+      <mat-menu #userMenu="matMenu">
+
+        <button mat-menu-item>
+          <mat-icon>person</mat-icon>
+          <span>Meu perfil</span>
+        </button>
+
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Configurações</span>
+        </button>
+
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          <span>Sair</span>
+        </button>
+
+      </mat-menu>
+
+    </div>
+
+  </div>
+
+</mat-toolbar>

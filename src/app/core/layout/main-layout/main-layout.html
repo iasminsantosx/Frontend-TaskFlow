@@ -1,0 +1,31 @@
+<mat-sidenav-container class="!h-screen">
+
+  <!-- Sidebar -->
+  <mat-sidenav
+    mode="side"
+    opened
+    class="!w-64 !border-r !border-slate-200"
+  >
+    <app-sidebar />
+  </mat-sidenav>
+
+  <!-- Área principal -->
+  <mat-sidenav-content class="!bg-slate-50">
+
+    <div class="flex h-full flex-col">
+
+      <!-- Header -->
+      <app-header />
+
+      <!-- Conteúdo das páginas -->
+      <main class="flex-1 overflow-y-auto p-8">
+
+        <router-outlet />
+
+      </main>
+
+    </div>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

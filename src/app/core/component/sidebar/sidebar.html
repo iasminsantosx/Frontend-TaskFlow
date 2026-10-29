@@ -1,0 +1,93 @@
+<div class="flex h-full w-64 flex-col bg-white">
+
+  <!-- Logo -->
+  <div class="flex h-20 items-center  border-slate-200 px-6">
+
+    <div class="flex items-center gap-3">
+
+      <div class="flex h-8 w-8 items-center justify-center rounded-xl bg-[#2563EB] text-white">
+        <img
+            src="/icon/check_small.svg"
+            alt="TaskFlow"
+            class="h-10 w-10"
+        />
+      </div>
+
+      <h1 class="text-xl font-bold text-slate-900">
+        TaskFlow
+      </h1>
+
+    </div>
+
+  </div>
+
+  <!-- Navegação -->
+  <nav class="flex-1 p-3">
+
+    
+    <mat-nav-list>
+
+      <a
+        mat-list-item
+        routerLink="/dashboard"
+        routerLinkActive="!bg-indigo-50"
+      >
+        <mat-icon matListItemIcon>dashboard</mat-icon>
+        <span matListItemTitle>Dashboard</span>
+      </a>
+
+      <a
+        mat-list-item
+        routerLink="/projects"
+        routerLinkActive="!bg-indigo-50"
+      >
+        <mat-icon matListItemIcon>folder</mat-icon>
+        <span matListItemTitle>Projetos</span>
+      </a>
+
+      <a
+        mat-list-item
+        routerLink="/tasks"
+        routerLinkActive="!bg-indigo-50"
+      >
+        <mat-icon matListItemIcon>check_circle</mat-icon>
+        <span matListItemTitle>Tarefas</span>
+      </a>
+
+      <a
+        mat-list-item
+        routerLink="/kanban"
+        routerLinkActive="!bg-indigo-50"
+      >
+        <mat-icon matListItemIcon>view_kanban</mat-icon>
+        <span matListItemTitle>Kanban</span>
+      </a>
+
+    </mat-nav-list>
+
+  </nav>
+
+  <!-- Rodapé -->
+  <div class="border-t border-slate-200 p-4">
+
+    <div class="flex items-center gap-3">
+
+      <div class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-indigo-600">
+        U
+      </div>
+
+      <div>
+        <p class="text-sm font-semibold text-slate-800">
+          Usuário
+        </p>
+
+        <p class="text-xs text-slate-500">
+          Minha conta
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
